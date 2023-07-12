@@ -70,6 +70,7 @@ section h5 {
 
 footer {
     background-color: #333;
+
     overflow: hidden;
 }
 
@@ -89,5 +90,4 @@ p{
     color: rgba(226, 206, 27, 0.692);
     padding: 20px;
 }
-
 
