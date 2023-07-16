@@ -10,7 +10,14 @@ body {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  header{
+    text-align: center; 
+    background-color: #c1d4ff;
+  color: aqua;
+  }
   
+
+ 
   .column {
     float: left;
     width: 33.3%;
@@ -27,7 +34,7 @@ body {
     padding: 50px;
     text-align: center;
     background-color: #474e5d;
-    color: white;
+    color:black;
   }
   
   .container {
