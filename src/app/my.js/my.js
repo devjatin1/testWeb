@@ -5,3 +5,8 @@ function myFunction()
      } else {
        x.style.display = "block";
      }
+    // use aos 
+    
+    <script>
+    AOS.init();
+  </script>
