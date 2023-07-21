@@ -1,8 +1,13 @@
-
+* {
+  box-sizing: border-box;
+  font-family: Open Sans,sans-serif;
+  margin: 0;
+  padding: 0;}
  /* Make the image fully responsive */
  .carousel-inner img {
     width: 100%;
-    height: 100%;
+    height: 100%;}
+    .carousel-inner img:hover { background-color: aqua; 
   }  
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +51,7 @@ footer{
   /* Style the navigation bar */
   .navbar {
     width: 100%;
-    background-color:#cf87df;
+    /* background-color:#cf87df; */
     overflow: auto;
   }
   
@@ -61,13 +66,16 @@ footer{
   }  
   /* Navbar links on mouse-over */
   .navbar a:hover {
-    background-color: #2d2a2a;
+    background-color: #d7b8cc;
   }
-  
-  /* Current/active navbar link */
-  .active {
+  .bg-primary-color {
     background-color:#cf87df;
   }
+  .navbar-brand:hover {
+    background-color: transparent !important;
+  }
+  /* Current/active navbar link */
+  
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
@@ -76,10 +84,92 @@ footer{
       display: block;
     }
   }
-.copy{
-  color: #000000;
+.copy{ 
+  background-color: #000000;
+  color: #e1d5d5;
+  text-align: center;
 }
 .ADVANCED{
   color: #000000;
+  text-align: center;
+ text-shadow: #2d2a2a;
 }
-/* use AOS */
+.med{
+  text-align: center;
+}
+.red {
+  color: brown;
+}
+
+.SerContainer{
+  grid-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: auto;
+  max-width: 1220px; 
+
+}
+.card:hover{
+  background-color: #b7fadd;
+
+}
+.card{
+  backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background: hsla(0,0%,100%,.4);
+    border: 1px solid hsla(0,0%,100%,.18);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    cursor: pointer;
+    display: flex;
+    flex-direction:column;
+    height: 370px;
+    justify-content: center;
+    padding: 1.2rem;
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+.card:hover {
+  box-shadow: 0 0 14px 3px rgba(0,0,0,.51);
+}
+.card.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.title {
+  font-size: 1.5rem;
+  padding: 0.8rem 0;
+}
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.lower {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+.icon{
+  font-size: 30px;
+}
+.proContainer {
+  grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: auto;
+  max-width: 1320px;
+}
+.proCard>img {
+  height: 240px;
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+div {
+  display: block;
+}
