@@ -101,75 +101,31 @@ footer{
   color: brown;
 }
 
-.SerContainer{
-  grid-gap: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin: auto;
-  max-width: 1220px; 
-
-}
 .card:hover{
-  background-color: #b7fadd;
+  background-color: #9de1d0;
+  border-radius: 50px !important;
+}
 
-}
-.card{
-  backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    background: hsla(0,0%,100%,.4);
-    border: 1px solid hsla(0,0%,100%,.18);
-    border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
-    cursor: pointer;
-    display: flex;
-    flex-direction:column;
-    height: 370px;
-    justify-content: center;
-    padding: 1.2rem;
-    transition: all .5s ease-in-out;
-    width: 100%;
-}
-.card:hover {
-  box-shadow: 0 0 14px 3px rgba(0,0,0,.51);
-}
-.card.upper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-.title {
-  font-size: 1.5rem;
-  padding: 0.8rem 0;
-}
-.subtitle {
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-align: justify;
-}
-.lower {
-  align-self: start;
-  display: flex;
-  flex-direction: column;
-}
-.icon{
-  font-size: 30px;
-}
-.proContainer {
-  grid-gap: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  margin: auto;
-  max-width: 1320px;
-}
-.proCard>img {
-  height: 240px;
-  transition: all .3s ease-in-out;
-  width: 100%;
-}
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
-div {
-  display: block;
+
+img:hover {
+  border-radius: 50px !important;
 }
+.myImg {
+  height: 250px !important;
+}
+
+.card-title {
+  font-weight: bold;
+text-align: start;
+}
+
+.card-body{
+ margin: 4%; 
+ padding: 5.25rem!important;
+}
+
