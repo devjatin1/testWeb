@@ -150,97 +150,28 @@ h4{
   text-align: center !important;
   color: rgb(0, 0, 0) !important;
 }
- 
-
-/*   
-.srccontainer{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 100px;
+footer {
+  /* display: inline !important; */
+background-color: #000000 !important;}
+body {
+  background-color: #030304;
 }
 
-.srccontainer h1:nth-child(1) {
-  color: #355c7d;
-  font-family: 'Fira Code', monospace;
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0 0 0 35%;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 170px;
-  animation: type 2s steps(40,end) forwards;
+.title-holder {
+  top: 0%;
+  left: 0%;
+  position: absolute;
 }
-
-.srccontainer h1:nth-child(2) {
-  opacity: 0;
-  font-family: "Work Sans", sans-serif;
-  margin: 0 auto auto auto;
-  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-  font-weight: 800;
-  font-size: 100px;  
-  width: 430px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-  
-}
-
-@keyframes shring-animation {
-  0% {
-    background-position: 0 0;
-    opacity: 0;
-    width: 0;
-  }
-  1% {
-    background-position: 0 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  50% {
-    background-position: 150px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  100% {
-    background-position: 400px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-}
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  1%, 99%{
-    border-right: 1px solid orange;
-  }
-  100%{
-    border-right: none;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */
-
-/* 
 .title {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
-  color: #171613;
+  color: #2cc0c2;
   width: 0;
   overflow: hidden;
   white-space: no-wrap;
   display:block;
-  border-right: 3px solid #f9d566;
-  animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+  border-right: 3px solid #000000;
+  animation: typewriter 8s steps(7) infinite, blinking-cursor 0.8s infinite;
   animation-fill-mode: forwards
 }
 
@@ -257,5 +188,65 @@ h4{
 
 @keyframes blinking-cursor {
   from { border-color: transparent }
-  to { border-color: #d6d6d6 }
-} */
+  to { border-color: #000000 }
+}
+.about  {
+  color: #e1d5d5;
+  
+}
+
+.footer-left { 
+  display:contents !important;
+margin-left: -25px !important;
+}
+
+.footer-center { 
+  align-items: center;
+display: block;
+color: #e1d5d5;
+margin: bottom 25px !important;
+}
+.footer-right {
+  margin-right: auto !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
