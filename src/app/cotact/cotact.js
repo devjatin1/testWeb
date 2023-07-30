@@ -1,21 +1,23 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+document.getElementById('status').innerHTML = "Sending...";
+formData = {
+  'name': $('input[name=name]').val(),
+  'email': $('input[name=email]').val(),
+  'subject': $('input[name=subject]').val(),
+  'message': $('textarea[name=message]').val()
+};
+
+
+$.ajax({
+  url: "jatin.gupta@gmail.com.php",
+  type: "POST",
+  data: formData,
+  success: function (data, textStatus, jqXHR) {
+
+    $('#status').text(data.message);
+    if (data.code) //If mail was sent successfully, reset the form.
+      $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+  },
+  error: function (jqXHR, textStatus, errorThrown) {
+    $('#status').text(jqXHR);
   }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-  
+});
