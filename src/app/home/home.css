@@ -3,12 +3,7 @@
   font-family: Open Sans,sans-serif;
   margin: 0;
   padding: 0;}
- /* Make the image fully responsive */
- .carousel-inner img {
-    width: 100%;
-    height: 100%;}
-    .carousel-inner img:hover { background-color: aqua; 
-  }  
+
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -109,8 +104,15 @@ h2{
 }
 
 .card:hover{
-  background-color: #9de1d0;
+  background: linear-gradient(
+    45deg,
+    hsla(168, 85%, 52%, 0.5),
+    hsla(263, 88%, 45%, 0.5) 100%);
+    
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
   border-radius: 50px !important;
+  
 }
 
 
@@ -119,9 +121,6 @@ img {
   overflow: clip;
 }
 
-img:hover {
-  border-radius: 50px !important;
-}
 .myImg {
   height: 250px !important;
 }
@@ -156,22 +155,22 @@ footer{
 body {
   background-color: #030304;
 }
-
+/* 
 .title-holder {
   top: 0%;
   left: 0%;
   position: absolute;
-}
+} */
 .title {
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  color: #2cc0c2;
+  font-size: 25px;
+  color: #df2424;
   width: 0;
   overflow: hidden;
   white-space: no-wrap;
   display:block;
-  border-right: 3px solid #000000;
-  animation: typewriter 8s steps(7) infinite, blinking-cursor 0.8s infinite;
+  border-right: 3px solid #e41818;
+  animation: typewriter 6s steps(7) infinite, blinking-cursor 0.8s infinite;
   animation-fill-mode: forwards
 }
 
@@ -208,9 +207,9 @@ color: #e1d5d5;
 margin: bottom 25px !important;
 text-align: center;
 }
-.footer-right {
-  margin-right: auto !important;
-}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -227,13 +226,13 @@ body {
 }
 
 
-
+/* 
 
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
@@ -246,8 +245,36 @@ body {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,);
-  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,) !important;
+  padding: -13px !important;
   text-align: center;
-  background-color: #f1f1f1;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.bg-image
+{
+  background-image: url('../assets/image/istockphoto-1091436276-612x612.jpg');
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+#demo{
+  background: linear-gradient(
+    45deg,
+    hsla(168, 85%, 52%, 0.5),
+    hsla(263, 88%, 45%, 0.5) 100%);
+    align-items: center;
+    padding: auto;
+    margin-top: 15px;
 }
