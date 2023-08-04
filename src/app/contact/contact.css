@@ -1,0 +1,96 @@
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  /* Style the navigation bar */
+  .navbar {
+    width: 100%;
+    /* background-color:#cf87df; */
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #d7b8cc;
+  }
+  .bg-primary-color {
+    background-color:#cf87df;
+  }
+  .navbar-brand:hover {
+    background-color: transparent !important;
+  }
+   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+   @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  html {
+    box-sizing: border-box;}
+
+    body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 
+.bg-image
+{
+  background-image: url('../assets/image/istockphoto-1091436276-612x612.jpg');
+  height: 70vh;
+  background-color: rgba(12, 225, 229, 0.965);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+/* Centered text */
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */ 
+/* 
+.centered::shadow {
+ background: linear-gradient(45deg,
+ hsla(0, 85%, 52%, 0.5),
+ hsla(263, 46%, 51%, 0.5) 100%);
+} */
+.hello{
+
+  background-image:url('../assets/image/web-img.webp');
+  background-position:0 53%;
+  background-size:cover;
+  height:500px;
+  padding:40px;
+  display:flex;
+  align-items:center;
+
+}
+h3{
+  mix-blend-mode:screen;
+  font-size:80px;
+  text-align:center;
+  background-color:white;
+  width:800px;
+  margin: 20px auto;
+}
