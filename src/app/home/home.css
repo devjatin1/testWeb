@@ -71,7 +71,7 @@ h2{
     background-color: #d7b8cc;
   }
   .bg-primary-color {
-    background-color:#cf87df;
+    background-color:#d985ec;
   }
   .navbar-brand:hover {
     background-color: transparent !important;
@@ -146,6 +146,7 @@ h4{
   text-align: center !important;
   color: rgb(0, 0, 0) !important;
 }
+
 footer {
   /* display: inline !important; */
 background-color: #000000 !important;}
@@ -195,17 +196,13 @@ body {
 }
 
 .footer-left { 
-  display:contents !important;
+ 
 margin-left: -25px !important;
 text-size-adjust: calc(left);
 }
 
 .footer-center { 
-  align-items: center;
-display: block;
-color: #e1d5d5;
-margin: bottom 25px !important;
-text-align: center;
+ margin-top: 40px !important ;
 }
 
 
@@ -225,14 +222,6 @@ body {
   padding: 0 10px;
 }
 
-
-/* 
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
